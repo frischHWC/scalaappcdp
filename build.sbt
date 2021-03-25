@@ -11,7 +11,7 @@ mainClass in assembly := Some("com.cloudera.frisch.scalaappcdp.App")
 assemblyJarName in assembly := "scalaappcdp.jar"
 
 // TODO: Change it to your matching version of CDP
-val cdpVersion = "7.1.5.0-257"
+val cdpVersion = "7.1.6.0-297"
 
 libraryDependencies ++= Seq(
   "org.apache.logging.log4j" %% "log4j-api-scala" % "11.0",
@@ -25,7 +25,7 @@ libraryDependencies ++= Seq(
   "org.apache.hadoop" % "hadoop-ozone-client" % ("1.0.0." + cdpVersion),
   "com.google.guava" % "guava" % "28.2-jre",
   "org.apache.solr" % "solr-solrj" % ("8.4.1." + cdpVersion),
-  "org.apache.kafka" % "kafka-clients" % ("2.4.1." + cdpVersion),
+  "org.apache.kafka" % "kafka-clients" % ("2.5.0." + cdpVersion),
   "org.apache.kudu" % "kudu-client" % ("1.13.0." + cdpVersion)
 
 )
