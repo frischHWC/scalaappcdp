@@ -2,11 +2,12 @@
 
 # Export your host here to launch the program on the platform
 # export HOST=
+# export JAVA_HOME=
 
 sbt clean assembly
 
 export USER=root
-export DEST_DIR="/home/root/scalaappcdp"
+export DEST_DIR="/root/scalaappcdp"
 
 echo "Create needed directory on platform and send required files there"
 
